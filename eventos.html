@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><Eventos-Comunitec></Eventos-Comunitec></title>
+    <link rel="stylesheet" href="css/eventos.css">
+    <link rel="stylesheet" href="css/style.css">
+     <link rel="icon" type="image/png" href="img/favicon.png">
+    <script src="javascript/auth.js"></script>
+</head>
+
+<body>
+    <body>
+    <header class="header-main">
+        <div class="header-container">
+            <div class="header-brand">
+                <div class="logo-container">
+                    <a href="main.html"><img class="return" src="img/regresar.png" alt="Volver"></a>
+                    <h1 class="logo-text">ComuniTec</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Sección de eventos -->
+    <section class="eventos-privados">
+        <h2>Eventos Privados</h2>
+        
+        <!-- Botón para crear evento -->
+        <button class="create-event-btn" id="createEventBtn">+</button>
+        
+        <!-- Menú desplegable para crear evento -->
+        <div class="create-event-menu" id="createEventMenu">
+            <h3>Crear Nuevo Evento</h3>
+            <form class="form-evento" id="eventForm">
+                <input type="text" placeholder="Nombre del evento" required>
+                <textarea placeholder="Descripción"></textarea>
+                <input type="datetime-local" required>
+                <input type="text" placeholder="Ubicación">
+                <select>
+                    <option>Privado (solo invitados)</option>
+                    <option>Solo amigos</option>
+                </select>
+                <button type="submit">Crear Evento</button>
+            </form>
+        </div>
+        
+        <!-- Overlay para cerrar menú al hacer clic fuera -->
+        <div class="overlay" id="overlay"></div>
+        
+        <!-- Lista de eventos -->
+        <div class="lista-eventos">
+            <h3>Mis Eventos</h3>
+            <div class="evento-card">
+                <h4>Fiesta de Graduación</h4>
+                <p>📅 15 Dic 2024 - 20:00</p>
+                <p>📍 Casa de María</p>
+                <p>👥 12 invitados confirmados</p>
+                <button>Gestionar Invitados</button>
+                <button>Editar Evento</button>
+            </div>
+            <div class="evento-card">
+                <h4>Estudio en Grupo - Matemáticas</h4>
+                <p>📅 18 Nov 2024 - 16:00</p>
+                <p>📍 Biblioteca Central</p>
+                <p>👥 5 invitados confirmados</p>
+                <button>Gestionar Invitados</button>
+                <button>Editar Evento</button>
+            </div>
+        </div>
+    </section>
+    
+   <script src="javascript/eventos.js"></script>
+</body>
+</html>
+</body>
+
+</html>
